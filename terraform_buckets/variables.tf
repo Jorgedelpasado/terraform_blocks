@@ -14,3 +14,7 @@ variable "raw_bucket_name" {
 variable "staging_bucket_name" {
     description = "Staging bucket"
 }
+
+variable "code_bucket_name" {
+    description = "Code bucket to store the scripts needed"
+}

@@ -17,3 +17,13 @@ resource "google_storage_bucket" "staging-bucket" {
 
   uniform_bucket_level_access = true
 }
+
+resource "google_storage_bucket" "code-bucket" {
+  name          = var.code_bucket_name
+  project       = var.project_id
+  location      = var.region
+  storage_class = "STANDARD"
+  force_destroy = true
+
+  uniform_bucket_level_access = true
+}
